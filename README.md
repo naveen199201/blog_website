@@ -5,8 +5,8 @@
 The first thing to do is to clone the repository:
 
 ```sh
-$ git clone https://github.com/naveen199201/video_streaming.git
-$ cd video_streaming/backend
+$ git clone https://github.com/naveen199201/blog_website.git
+$ cd blog_website/blog_backend
 ```
 
 Create a virtual environment to install dependencies in and activate it:
@@ -32,7 +32,7 @@ Once `pip` has finished downloading the dependencies:
 ## Frontend Setup
 First thing to do is to install the required node modules
 ```sh
-$ cd video_streaming/streaming_platform
+$ cd blog_website/blog_frontend
 $ npm install
 ```
 Start the app by using the following command
