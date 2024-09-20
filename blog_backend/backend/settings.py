@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-y0h2&_$u6jm!6h^9p&vh=_fe&oqlbf%og)ug(&=vevxs378ks(
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['.vercel.app']
+ALLOWED_HOSTS = ['.vercel.app','*']
 
 
 # Application definition
@@ -120,6 +120,10 @@ AUTH_PASSWORD_VALIDATORS = [
         'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',
     },
 ]
+
+
+CORS_ALLOW_ALL_ORIGINS = True
+
 
 
 # Internationalization
