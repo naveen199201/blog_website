@@ -16,7 +16,7 @@ const Articles = ({ selectedCategory }) => {
     useEffect(() => {
         const fetchArticles = async () => {
             try {
-                const response = await axios.get('http://127.0.0.1:8000/articles/');
+                const response = await axios.get('https://blog-website-articles.vercel.app/articles/');
                 console.log(response.data);
                 const sortedArticles = response.data.sort((a, b) => {
                     const dateA = new Date(a.created_at);

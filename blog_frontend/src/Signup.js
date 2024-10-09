@@ -27,14 +27,14 @@ const SignUp = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const response = await axios.post('http://localhost:8000/register/', formData);
+            const response = await axios.post('https://blog-website-articles.vercel.app/register/', formData);
             console.log(response.data);
             const token = response.data.token;
             localStorage.setItem('token', token);
             console.log(token)
             localStorage.setItem('user', response.data.username);
             localStorage.setItem('isAuthenticated', true);
-            navigate('/home'); // Redirect to login page after successful sign-up
+            navigate('/'); // Redirect to login page after successful sign-up
         } catch (error) {
             setError('Error signing up', error);
         }

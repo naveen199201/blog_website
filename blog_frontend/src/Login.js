@@ -12,7 +12,7 @@ const LoginComponent = () => {
 
   const handleLogin = async () => {
     try {
-      const response = await axios.post('http://localhost:8000/api-auth/', {
+      const response = await axios.post('https://blog-website-articles.vercel.app/api-auth/', {
         username: username,
         password: password
       });

@@ -20,7 +20,7 @@ function Articledetails() {
     useEffect(() => {
         const fetchArticle = async () => {
             try {
-                const response = await axios.get(`http://127.0.0.1:8000/articles/${articleId}/`);
+                const response = await axios.get(`https://blog-website-articles.vercel.app/articles/${articleId}/`);
                 setArticle(response.data);
             } catch (error) {
                 console.error('Error fetching article:', error);
@@ -39,7 +39,7 @@ function Articledetails() {
             const formattedDate = new Date().toLocaleString('en-US', { day: 'numeric', month: 'long', year: 'numeric', hour: 'numeric', minute: 'numeric' });
 
             const response = await axios.post(
-                'http://127.0.0.1:8000/comments/',
+                'https://blog-website-articles.vercel.app/comments/',
                 {
                     article: articleId,
                     text: newCommentText,
